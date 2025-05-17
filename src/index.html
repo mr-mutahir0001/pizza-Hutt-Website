@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Hut</title>
+    <link rel="icon" href="pics/Logo-Pizza-Hut.png">
+    <link rel="stylesheet" href="output.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body style="font-family: cursive;">
+    <header data-aos="fade-down" data-aos-duration="2000" >
+        <nav class="flex justify-between items-center  h-18 px-5 md:px-10 xl:px-15">
+            <div class="flex items-center">
+                <div class="w-14 h-14 ">
+                    <a href="#">
+                        <img src="pics/Logo-Pizza-Hut.png" class="object-cover" alt="">
+                    </a>
+                </div>
+                <a href="#">
+                    <p class="text-xl font-bold  ms-2 text-[#EE3A43]">pizza hut</p>
+                </a>
+            </div>
+            <!-- nav links -->
+            <div class="space-x-4 font-bold hidden lg:block" id="content-collapse">
+                <span>
+                    <select name="" id="" class="cursor-pointer">
+                        <option value="">Home</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">F</option>
+                    </select>
+                </span>
+                <a href="#">About Us</a>
+                <span>
+                    <select name="" id="" class="cursor-pointer">
+                        <option value="">Shop</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">F</option>
+                    </select>
+                </span>
+                <span>
+                    <select class="cursor-pointer">
+                        <option value="">Blog</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">F</option>
+                    </select>
+                </span>
+                <span>
+                    <select name="" id="" class="cursor-pointer">
+                        <option value="">Pages</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                        <option value="">D</option>
+                        <option value="">F</option>
+                    </select>
+                </span>
+                <a href="">Contect</a>
+            </div>
+            <!-- nav contect us -->
+            <div>
+                <div class="flex space-x-4">
+                    <span class="hidden md:block cursor-pointer" id="content-collapse">
+                        <img src="pics/zero navbar.png" class="ms-2" alt="">
+                        <img src="pics/Symbol.png" alt="">
+                    </span>
+                    <button
+                        class="bg-[#FFC222] text-[#ffffff] cursor-pointer hidden md:block px-5 lg:px-8 2xl:px-10 rounded-lg p-2"
+                        id="content-collapse">
+                        Contect Us
+                    </button>
+                    <span class="text-3xl cursor-pointer " id="toggler-btn">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section 1 -->
+
+    <section >
+        <div class="flex flex-col lg:flex-row h-[100%] w-[100%]">
+            <!-- parent div -->
+            <div class="w-[100%]   lg:w-[50%]  flex justify-center lg:justify-end items-center"
+                style="background-image: url(pics/hero\ section\ background\ first\ halt.png); background-size: cover;">
+                <!-- text area -->
+                <div class="w-[80%] space-y-4 my-11 lg:my-0 lg:mb-10" data-aos="fade-down" data-aos-duration="3000">
+                    <p class="text-3xl lg:text-4xl xl:text-5xl  font-extrabold ps-4">
+                        Best Food For
+                    </p>
+                    <p
+                        class="text-3xl lg:text-4xl xl:text-5xl font-extrabold bg-[#FFD40D] rounded-full p-2 px-4 inline-block">
+                        Best Restaurants
+                    </p>
+                    <p class="ps-4 xl:text-xl text-[#555555] font-bold">
+                        Arriving from Paris in 1986
+                    </p>
+                    <!-- inputs form  -->
+                    <div class="px-4">
+                        <input type="number" placeholder="No of Guest"
+                            class="w-full bg-[#ffffff] p-2 border-2 border-gray-200  rounded-sm text-[#555555] placeholder-[#555555] font-medium">
+                    </div>
+                    <div class="w-full flex justify-between px-4 ">
+                        <input type="date" placeholder="Date"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium rounded-sm">
+                        <input type="time" placeholder="Time"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium    rounded-sm">
+                    </div>
+                    <!-- table button -->
+                    <div class="px-4">
+                        <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg ">
+                            <button
+                                class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">Reserve
+                                a Table</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- hero section food pics -->
+
+            <div class="w-[100%] lg:w-[50%] h-[100%]"
+                style="background-image: url(pics/hero\ section\ background\ second\ half.png); background-size: cover;">
+
+                <div class="w-[100%] h-[100%]  flex">
+                    <div class="w-[50%] flex justify-center mt-15" data-aos="fade-down" data-aos-duration="3000">
+                        <div class="w-[60%] h-[70%] ">
+                            <img src="pics/hero section food pic.png" alt="">
+                        </div>
+                    </div>
+                    <div class="w-[50%] h-[100%] my-15 space-y-20">
+                        <div class="flex space-x-3 p-3 bg-[#fff] rounded-full w-[100%] md:w-[70%] ">
+                            <div>
+                                <img src="pics/car pic.png" class="object-cover w-12 h-12" alt="">
+                            </div>
+                            <p class="font-bold">Free Delivery 7 <br> Days a Week</p>
+                        </div>
+                        <div class="w-[60%] h-[70%] " data-aos="fade-up" data-aos-duration="3000">
+                            <img src="pics/hero section food pic 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+
+    <section class="bg-[#ffffff] flex justify-center">
+        <div class="w-[90%] lg:w-[80%] flex  flex-col lg:flex-row my-10 lg:my-20">
+            <div class="w-[100%] lg:w-[30%]" data-aos="fade-down" data-aos-duration="3000">
+                <div class="flex justify-center">
+                    <div class="w-[60%] lg:w-[100%] h-[100%]">
+                        <img src="pics/section 2 food.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-[100%] lg:w-[40%] flex items-center">
+                <div class="flex justify-center items-center flex-col space-y-6 px-3 lg:px-5 my-5 lg:my-0   ">
+                    <span class="text-lg  font-bold text-[#EE3A43]">
+                        Welcome To Foodio
+                    </span>
+                    <span class="font-extrabold text-3xl  lg:text-4xl xl:text-5xl">
+                        Feel The Taste
+                    </span>
+                    <span class="font-extrabold text-3xl lg:text-4xl xl:text-5xl">
+                        Of Foods
+                    </span>
+                    <span class="text-[#555555] text-center">
+                        Nisl quam nestibulum ac quam nec odio elementu
+                        aucan ligula. Orci varius natoque pena tibus et maum
+                        ac quam nec odio rbine.
+                    </span>
+                    <div class="mt-5 text-center">
+                        <p class="text-[#555555] font-bold">
+                            Monday To Friday - 11:30 To 02:00
+                        </p>
+                        <p class="underline font-bold text-lg">
+                            +92 305 5900922
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[100%] lg:w-[30%]" data-aos="fade-up" data-aos-duration="3000">
+                <div>
+                    <div class="p-5">
+                        <img src="pics/section 2 human.png" alt="">
+                    </div>
+                    <div class="relative w-[100%] h-50 mt-5">
+                        <img src="pics/circle-text.png.png" alt="Foodio Circle" class="w-full h-full object-contain" />
+                        <img src="pics/circle-text food.png" alt="Steak"
+                            class="absolute top-1/2 left-1/2 w-40 h-40 rounded-full object-cover transform -translate-x-1/2 -translate-y-1/2" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 3 -->
+
+    <section class="bg-[#ffffff] flex justify-center">
+        <div class="w-[90%] lg:w-[80%] flex flex-col lg:flex-row">
+            <div class="w-[100%] lg:w-[30%]  flex items-center justify-center" data-aos="fade-down" data-aos-duration="3000">
+                <div class="font-extrabold text-3xl lg:text-4xl 2xl:text-5xl space-y-4  ">
+                    <p>Good Food</p>
+                    <p>Steaks & Greats</p>
+                    <p>Restaurants</p>
+                </div>
+            </div>
+            <div class="w-[100%] lg:w-[40%] flex items-center py-10 lg:py-0">
+                <div class="relative">
+                    <img src="pics/section 3 discount.png" class="absolute w-35 h-35" alt="">
+                    <img src="pics/section 3 food1.png" alt="">
+                </div>
+            </div>
+            <div class="w-[100%] lg:w-[30%]  flex items-center justify-center" data-aos="fade-up" data-aos-duration="3000">
+                <div class="p-4 space-y-4">
+                    <p class="font-bold text-[#555555]">
+                        <span class=" text-[#ADDB31]">&#10003;</span>
+                        Quality foods natural gradient
+                    </p>
+                    <p class="font-bold text-[#555555]">
+                        <span class=" text-[#ADDB31]">&#10003;</span>
+                        Award-winning Restaurant
+                    </p>
+                    <p class="font-bold text-[#555555]">
+                        <span class=" text-[#ADDB31]">&#10003;</span>
+                        Healthy Food
+                    </p>
+                    <p class="font-bold text-[#555555]">
+                        <span class=" text-[#ADDB31]">&#10003;</span>
+                        individually styled bedrooms
+                    </p>
+                    <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg mt-5">
+                        <button
+                            class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">
+                            Reserve a Table
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 4 small brands -->
+
+    <section data-aos="fade-down" data-aos-duration="3000">
+        <div class="my-5 lg:my-20 flex flex-col items-center">
+            <div>
+                <p class="text-lg lg:text-xl font-bold">HIGHLY TRUSTED SPONSOR</p>
+            </div>
+            <div class="grid grid-cols-6 gap-3 w-[80%] mt-10">
+                <div>
+                    <img src="pics/section 3 food2.png" alt="">
+                </div>
+                <div>
+                    <img src="pics/section 3 food3.png" alt="">
+                </div>
+                <div>
+                    <img src="pics/section 3 food4.png" alt="">
+                </div>
+                <div>
+                    <img src="pics/section 3 food5.png" alt="">
+                </div>
+                <div>
+                    <img src="pics/section 3 food6.png" alt="">
+                </div>
+                <div>
+                    <img src="pics/section 3 food7.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 deals manu -->
+
+    <section class="flex flex-col items-center bg-[#F5F8FD] py-10 " data-aos="fade-down" data-aos-duration="3000">
+        <div>
+            <p
+                class="font-extrabold text-3xl lg:text-4xl xl:text-5xl p-2 border-b-6 rounded-md border-[#FFD40D] inline-block">
+                Delicious Manus
+            </p>
+        </div>
+
+        <!-- manu 1 breakfast -->
+
+        <div class="w-[90%] lg:w-[80%] flex flex-col lg:flex-row py-10 lg:gap-10 ">
+            <div class="w-[100%] lg:w-[30%]  flex items-center justify-center" data-aos="fade-down" data-aos-duration="3000">
+                <div class=" bg-[#ffffff] w-full  p-5 py-10 space-y-4 rounded-4xl shadow-2xl">
+                    <div>
+                        <span class="text-2xl font-extrabold border-b-4 border-[#FFD40D]">Breakfast</span>
+                    </div>
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Desi Breakfast</span>
+                        <span class="text-[#EE3A43]">$12.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">Sausage, three rashers of streaky bacon, two
+                            fried eggs</p>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <!-- deal 2 -->
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Three Meat Skillet</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">
+                            Hickory House bacon, sausage, ham, cheddar cheese
+                        </p>
+                    </div>
+                    <div>
+                        <hr class="text-[#555555]">
+                    </div>
+                    <!-- deal 3 -->
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Breakfast Bowl</span>
+                        <span class="text-[#EE3A43]">$14.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">
+                            Three eggs, tater tots, choice of bacon or
+                            sausage, shredded cheese
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- manu 2 -->
+
+            <div class="w-[100%] lg:w-[30%] flex items-center py-10 lg:py-0 " data-aos="flip-up"  data-aos-duration="3000" >
+                <div class=" bg-[#ffffff] w-full h-full p-5 space-y-4 rounded-4xl shadow-2xl">
+                    <div>
+                        <span class="text-2xl font-extrabold border-b-4 border-[#FFD40D]">Lunch</span>
+                    </div>
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Potato Skins</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">Sour cream, bacon, cheddar cheese, olive oil</p>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <!-- deal 2 -->
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Apple Pie Pancakes</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">
+                            Spices. Slather with butter and dunk them in
+                            some vanilla</p>
+                    </div>
+                    <div>
+                        <hr class="text-[#555555]">
+                    </div>
+                    <!-- deal 3 -->
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Sweet Cream Waffle</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">
+                            Refrigerated. 2 Eggs ; Baking & Spices. 2 cups</p>
+                    </div>
+                    <div>
+                        <hr class="text-[#555555]">
+                    </div>
+                    <!-- deal 4 -->
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Caesar Wrap</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">This classic with tender chicken,
+                            Parmesan cheese and chopped</p>
+                    </div>
+                </div>
+            </div>
+            <!-- manu 3 -->
+
+            <div class="w-[100%] lg:w-[30%]  flex items-center justify-center" data-aos="fade-down" data-aos-duration="3000">
+                <div class=" bg-[#ffffff] w-full  p-5 py-10 space-y-4 rounded-4xl shadow-2xl">
+                    <div>
+                        <span class="text-2xl font-extrabold border-b-4 border-[#FFD40D]">Dinner</span>
+                    </div>
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Beef Lasagna Food</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">2 olive oil, plus a little for the dish; 750g lean
+                            beef mince; 90g pack prosciutto</p>
+                    </div>
+                    <div>
+                        <hr>
+                    </div>
+                    <!-- deal 2 -->
+
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Chicken Mayo Roll</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">Cook chicken in grill pan, once the chicken
+                            cooked place chicken</p>
+                    </div>
+                    <!-- deal 3 -->
+                    <div>
+                        <hr class="text-[#555555]">
+                    </div>
+                    <div class="flex justify-between text-md font-bold">
+                        <span>Mutton Curry</span>
+                        <span class="text-[#EE3A43]">$9.00</span>
+                    </div>
+                    <div>
+                        <p class="text-[#555555]">
+                            Mutton Curry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+
+    <section class="bg-[#F5F8FD]  flex justify-center ">
+        <div class="w-[90%] lg:w-[80%]">
+            <div class="flex justify-between flex-col lg:flex-row">
+                <div class="w-[90%] lg:w-[40%] space-y-2">
+                    <p class="text-[#EE3A43] font-extrabold">BEST SOLUTION</p>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold">We Provide Best</p>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold">Services</p>
+                </div>
+                <div class="w-[90%] lg:w-[40%] mt-4 lg:mt-0 flex items-center   ">
+                    <p class="text-[#555555] text-justify">
+                        Nisl quam nestibulum ac quam nec odio elementu
+                        aucan ligula. Orci varius natoque pena tibus et
+                        maurient monte nascete ridiculus mus
+                        nellentesque um ac quam nec odio rbine.
+                    </p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 my-15" data-aos="fade-up" data-aos-duration="3000">
+                <div class="flex flex-col items-center text-center space-y-3">
+                    <div>
+                        <img src="pics/section 6 pic 1.png" alt="">
+                    </div>
+                    <p class="text-xl font-extrabold">Afternoon Tea</p>
+                    <p>Nisl quam nestibulum ac quam nec
+                        aucan ligula Orci varius.</p>
+                </div>
+                <div class="flex flex-col items-center text-center space-y-3">
+                    <div>
+                        <img src="pics/section 6 pic 2.png" alt="">
+                    </div>
+                    <p class="text-xl font-extrabold">Takeaway & Delivery</p>
+                    <p>Nisl quam nestibulum ac quam nec
+                        aucan ligula Orci varius.</p>
+                </div>
+                <div class="flex flex-col items-center text-center space-y-3">
+                    <div>
+                        <img src="pics/section 6 pic 3.png" alt="">
+                    </div>
+                    <p class="text-xl font-extrabold">Wine & Cocktails</p>
+                    <p>Nisl quam nestibulum ac quam nec
+                        aucan ligula Orci varius.</p>
+                </div>
+                <div class="flex flex-col items-center text-center space-y-3">
+                    <div>
+                        <img src="pics/section 6 pic 4.png" alt="">
+                    </div>
+                    <p class="text-xl font-extrabold">Alfresco Dining</p>
+                    <p>Nisl quam nestibulum ac quam nec
+                        aucan ligula Orci varius.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 7 -->
+
+    <section class="bg-[#ffffff] flex justify-center py-10 lg:py-15">
+        <div class="w-[90%] lg:w-[80%] ">
+            <div class="w-[100%] text-center" data-aos="fade-down" data-aos-duration="3000">
+                <p
+                    class="text-3xl lg:text-4xl xl:text-5xl font-extrabold pb-4 border-b-6 border-[#FFD40D] inline-block">
+                    Deal Of The Day
+                </p>
+            </div>
+            <!-- second  -->
+            <div class="w-[100%] flex flex-col lg:flex-row justify-between mt-10">
+                <div class="w-[100%] lg:w-[40%] flex flex-col justify-center space-y-5" data-aos="fade-down" data-aos-duration="3000">
+                    <div>
+                        <p class="font-bold bg-[#FFD40D] inline-block p-1 px-2 rounded-full">SALE UP TO 7% OFF</p>
+                    </div>
+                    <div>
+                        <p class="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold">Shroom Bacon Burger</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="font-bold text-[#555555]">
+                            <span class=" text-[#ADDB31]">&#10003;</span>
+                            Fresh & Testy
+                        </p>
+                        <p class="font-bold text-[#555555]">
+                            <span class=" text-[#ADDB31]">&#10003;</span>
+                            Best in Organic Food
+                        </p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="font-bold text-[#555555]">
+                            <span class=" text-[#ADDB31]">&#10003;</span>
+                            Fresh & Testy
+                        </p>
+                        <p class="font-bold text-[#555555]">
+                            <span class=" text-[#ADDB31]">&#10003;</span>
+                            Best in Organic Food
+                        </p>
+                    </div>
+                    <div class="flex gap-2">
+                        <p class="text-xl lg:text-2xl font-extrabold line-through text-[#555555]">$21.76</p>
+                        <p class="text-3xl lg:text-4xl  font-extrabold "><span class="text-[#EE3A43]">$</span>11.76</p>
+                    </div>
+                    <div class="">
+                        <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg ">
+                            <button
+                                class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">
+                                Add To Card</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[100%] lg:w-[50%]" data-aos="fade-up" data-aos-duration="3000">
+                    <div>
+                        <img src="pics/section7 food pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 8  -->
+
+    <section class="bg-[#ffffff] flex justify-center pb-10 lg:pb-15 ">
+        <div
+            class="w-[90%] lg:w-[80%]  border-4 border-[#FFD40D] rounded-2xl flex flex-col lg:flex-row justify-between">
+            <div class="w-[100%] lg:w-[50%] p-2 ">
+                <div class="flex gap-2" data-aos="fade-down" data-aos-duration="3000">
+                    <div>
+                        <img src="pics/section 8 pic 1.png" alt="" class="cursor-pointer hover:scale-90 transition-all">
+                    </div>
+                    <div>
+                        <img src="pics/section 8 pic 2.png" alt="" class="cursor-pointer hover:scale-90 transition-all">
+                    </div>
+                </div>
+                <div class="flex gap-2" data-aos="fade-up" data-aos-duration="3000">
+                    <div>
+                        <img src="pics/section 8 pic 3.png" alt="" class="cursor-pointer hover:scale-90 transition-all">
+                    </div>
+                    <div>
+                        <img src="pics/section 8 pic 4.png" alt="" class="cursor-pointer hover:scale-90 transition-all">
+                    </div>
+                </div>
+            </div>
+            <div class="w-[90%] lg:w-[45%] p-2 flex flex-col justify-center space-y-4" data-aos="zoom-in" data-aos-duration="3000">
+                <div>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold ">Private Dining and</p>
+                </div>
+                <div>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl font-extrabold ">Events</p>
+                </div>
+                <div>
+                    <p class="text-[#555555]">
+                        With many private dining spaces, M is the perfect place to host
+                        your event or gathering
+                    </p>
+                </div>
+                <div class="">
+                    <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg ">
+                        <button
+                            class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">
+                            Equire Now
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">Booking : +92 305 5900922</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 9  -->
+
+    <section class="bg-[#EE3A43] flex justify-center py-10 text-[#fff]">
+        <div class="w-[90%] lg:w-[80%] rounded-2xl flex flex-col lg:flex-row justify-between">
+            <div class="w-[100%] lg:w-[45%] flex flex-col justify-center space-y-5" data-aos="fade-down" data-aos-duration="3000">
+                <div>
+                    <p>THANKS FOR WATCH VIDEO</p>
+                </div>
+                <div>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl   font-extrabold">Highlights its</p>
+                </div>
+                <div>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl  font-extrabold">Unique Features And</p>
+                </div>
+                <div>
+                    <p class="text-3xl lg:text-4xl 2xl:text-5xl font-bold">Experience</p>
+                </div>
+                <div class="flex">
+                    <div>
+                        <img src="pics/section 9 pic 5 experience.png" alt="" class="w-40 h-25 lg:w-50 lg:h-35">
+                    </div>
+                    <div class="flex items-center gap-3 ms-10 lg:ms-15">
+                        <div class="w-12 h-12 lg:w-15 lg:h-15 rounded-full border-2 border-[#fff] bg-pink-300">
+                        </div>
+                        <div>
+                            Watch Video
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+
+            <div class="w-[90%] lg:w-[50%]"  data-aos="zoom-in-down" data-aos-duration="3000" >
+                <div class="w-full h-full relative py-10 lg:py-0 ">
+                    <div class="border-6 border-[#FFD40D] inline-block rounded-full w-[50%]">
+                        <div class="border-4 border-[#EE3A43] rounded-full">
+                            <img src="pics/section 9 pic 1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute top-20 lg:top-23 border-6 border-[#FFD40D] inline-block rounded-full w-[50%]">
+                        <div class="border-4 border-[#EE3A43] rounded-full">
+                            <img src="pics/section 9 pic 22.png" alt="">
+                        </div>
+                    </div>
+                    <div class="border-6 border-[#FFD40D] inline-block rounded-full w-[50%] mt-5 ms-6">
+                        <div class="border-4 border-[#EE3A43] rounded-full">
+                            <img src="pics/section 9 pic 3.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- arrow -->
+
+                    <div class="absolute top-70 lg:top-85  inline-block rounded-full ms-3 ">
+                        <div class="rounded-full">
+                            <img src="pics/section 9 pic 4 arrow.png" class="w-20 h-20 lg:w-25 lg:h-25" alt="">
+                        </div>
+                        <div>
+                            <p class="text-center mt-2">
+                                Great Hospitality and
+                                Entertainment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 10 -->
+
+    <section class="bg-[#ffffff] flex justify-center py-10 lg:py-15">
+        <div class="w-[90%] lg:w-[80%] ">
+            <div class="w-[100%] text-center"  data-aos="fade-down" data-aos-duration="3000">
+                <p
+                    class="text-3xl lg:text-4xl xl:text-5xl font-extrabold pb-4 border-b-6 border-[#FFD40D] inline-block">
+                    Recent News
+                </p>
+            </div>
+            <!-- second  -->
+            <div class="w-[100%] flex flex-col lg:flex-row justify-between mt-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                    <!-- pic one -->
+                    <div class="space-y-5"  data-aos="fade-up" data-aos-duration="3000">
+                        <div class="rounded-lg">
+                            <img src="pics/section 10 pic 1.png" alt="">
+                        </div>
+                        <div>
+                            <span class="p-1 bg-[#FFD40D] rounded-lg">April 6, 2010</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">Creamy Chicken Alfredo</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <img src="pics/section 10 pic 4 human.png" alt="">
+                            </span>
+                            <span class="font-bold">Willimes Thomas</span>
+                        </div>
+                    </div>
+                    <!-- pic tow -->
+                    <div class="space-y-5"  data-aos="fade-down" data-aos-duration="3000">
+                        <div class="rounded-lg">
+                            <img src="pics/section 10 pic 2.png" alt="">
+                        </div>
+                        <div>
+                            <span class="p-1 bg-[#FFD40D] rounded-lg">April 6, 2010</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">Air Fryer Salmon</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <img src="pics/section 10 pic 4 human.png" alt="">
+                            </span>
+                            <span class="font-bold">Willimes Thomas</span>
+                        </div>
+                    </div>
+                    <!-- pic three  -->
+                    <div class="space-y-5"  data-aos="fade-up" data-aos-duration="3000">
+                        <div class="rounded-lg">
+                            <img src="pics/section 10 pic 3.png" alt="">
+                        </div>
+                        <div>
+                            <span class="p-1 bg-[#FFD40D] rounded-lg">April 6, 2010</span>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold">Supporting food flavors</p>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span>
+                                <img src="pics/section 10 pic 4 human.png" alt="">
+                            </span>
+                            <span class="font-bold">Willimes Thomas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 11 -->
+
+    <section class="bg-[#ffffff] flex justify-center py-10 ">
+        <div class="w-[90%] lg:w-[80%]" >
+            <div class="space-y-4" data-aos="fade-down" data-aos-duration="3000">
+                <p class="text-[#EE3A43] font-bold">GET IN TOUCH</p>
+                <p class=" text-3xl lg:text-4xl 2xl:text-5xl font-bold">Reservation Table & Enjoy</p>
+                <p class=" text-3xl lg:text-4xl 2xl:text-5xl font-bold">Dinnig Table</p>
+            </div>
+            <div class="mt-10 flex flex-col lg:flex-row justify-between">
+                <div class="w-[90%] lg:w-[30%] space-y-5 " data-aos="fade-down" data-aos-duration="3000">
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-12 h-12 lg:w-15 lg:h-15 rounded-full  bg-[#FFD40D] flex justify-center items-center">
+                            <i class="fa-solid fa-utensils text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#EE3A43] font-bold">for booking</p>
+                            <p class="text-[#555555] font-bold">+1 (850) 344 0 66</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-12 h-12 lg:w-15 lg:h-15 rounded-full  bg-[#FFD40D] flex justify-center items-center">
+                            <i class="fa-solid fa-envelopes-bulk text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#EE3A43] font-bold">for private dining</p>
+                            <p class="text-[#555555] font-bold">info@foodio.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div
+                            class="w-12 h-12 lg:w-15 lg:h-15 rounded-full  bg-[#FFD40D] flex justify-center items-center">
+                            <i class="fa-solid fa-location-dot text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-[#EE3A43] font-bold">location</p>
+                            <p class="text-[#555555] font-bold">New Street Town 2512x (U.S)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- contect form -->
+
+                <div class="w-[100%] lg:w-[60%]  space-y-6 py-5 lg:py-0">
+                    <div>
+                        <input type="number" placeholder="No of Guest"
+                            class="w-full bg-[#ffffff] p-2 border-2 border-gray-200  rounded-sm text-[#555555] placeholder-[#555555] font-medium">
+                    </div>
+                    <div class="w-full flex justify-between  ">
+                        <input type="text" placeholder="Full Name"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium rounded-sm">
+                        <input type="text" placeholder="Phone no"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium    rounded-sm">
+                    </div>
+                    <div class="w-full flex justify-between ">
+                        <input type="date" placeholder="Date"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium rounded-sm">
+                        <input type="time" placeholder="Time"
+                            class="p-2 w-[45%] bg-[#ffffff] border-2 border-gray-200 text-[#555555] placeholder-[#555555] font-medium    rounded-sm">
+                    </div>
+                    <div class="float-end">
+                        <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg ">
+                            <button
+                                class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">
+                                Add To Card</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="py-10 flex justify-center"
+        style="background-image: url(pics/footer\ background\ pic.png);background-size:cover;">
+        <div class="w-[90%] lg:w-[80%]">
+            <div class="flex flex-col lg:flex-row justify-between">
+                <!-- Box red  -->
+                <div
+                    class="flex flex-col justify-between bg-[#EE3A43] text-[#fff]  p-5 rounded-2xl  h-90 w-[100%] lg:w-[35%]"  data-aos="fade-down" data-aos-duration="3000">
+                    <div>
+                        <p class="font-bold text-2xl">pizza hut</p>
+                        <p class="ms-3 text-sm">Food & Restaurant</p>
+                    </div>
+                    <div class="space-y-4">
+                        <p>Tuesday – Saturday: 12:00pm – 23:00pm</p>
+                        <p class="underline">Closed on Sunday</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">
+                            5 star rated on TripAdvisor
+                        </p>
+                    </div>
+                </div>
+                <!-- box two -->
+                <div class="mt-10 lg:mt-0"  data-aos="fade-up" data-aos-duration="3000">
+                    <div>
+                        <p class="pb-1 border-b-4 border-[#FFD40D] inline-block text-2xl font-bold">About</p>
+                    </div>
+                    <div class="mt-10">
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Fredoka One
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Special Dish
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Reservation
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Contect
+                        </p>
+                    </div>
+                </div>
+                <!-- box three -->
+                <div class=" mt-10 lg:mt-0"  data-aos="fade-down" data-aos-duration="3000">
+                    <div>
+                        <p class="pb-1 border-b-4 border-[#FFD40D] inline-block text-2xl font-bold">Manu</p>
+                    </div>
+                    <div class="mt-10">
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Steaks
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Burgers
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Cocktails
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Bar B Q
+                        </p>
+                        <p>
+                            <span class="text-[#555555] text-2xl font-bold">&gt;</span>
+                            Desserts
+                        </p>
+                    </div>
+                </div>
+                <div class=" mt-5 lg:mt-0"  data-aos="fade-up" data-aos-duration="3000">
+                    <div>
+                        <p class="pb-1 border-b-4 border-[#FFD40D] inline-block text-2xl font-bold">Newsletter</p>
+                    </div>
+                    <div class="space-y-5 mt-10">
+                        <p>
+                            Get recent news and updates.
+                        </p>
+                        <div>
+                            <input type="text" placeholder="Email"
+                                class="w-full bg-[#ffffff] p-2 border-2 border-gray-200  rounded-sm text-[#555555] placeholder-[#555555] font-medium">
+                        </div>
+                        <div>
+                            <div class="border-2 border-[#EE3A43] inline-block p-1 rounded-lg ">
+                                <button
+                                    class="bg-[#EE3A43] p-2 rounded-lg text-white cursor-pointer hover:scale-x-90 transition-all">
+                                    Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-10" style="color: red;"  data-aos="fade-up" data-aos-duration="3000">
+                <hr>
+            </div>
+            <div class="mt-5 flex flex-col lg:flex-row gap-5  justify-between"  >
+                <p class="font-bold"><span class="text-[#EE3A43]">© 2024 Pizza Hut</span> | Created By Mutahir</p>
+                <div class="flex gap-5">
+                    <div>
+                        <a href="">
+                            <i class="fab fa-facebook hover:text-blue-600 text-2xl"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="fab fa-instagram text-2xl hover:text-pink-500"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="funtion.js"></script>
+</body>
+
+</html>
